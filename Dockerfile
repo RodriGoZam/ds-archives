@@ -1,4 +1,4 @@
 FROM alpine
-COPY shell1.sh /
-RUN ["chmod","+x","shell1.sh"]
-ENTRYPOINT ["/bin/sh","shell1.sh"]
+COPY shell1.sh /ds-archives
+RUN ["chmod","+x","ds-archives/shell1.sh"]
+ENTRYPOINT ["/bin/sh","ds-archives/shell1.sh"]
